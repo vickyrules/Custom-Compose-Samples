@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools" >
+<resources>
 
-    <style name="Theme.Rally" parent="android:Theme.Material.Light.NoActionBar" >
+    <style name="Theme.Rally" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/backgroundColor</item>
         <item name="android:windowBackground">@color/backgroundColor</item>
         <item name="android:windowLightStatusBar">false</item>
-<!--      <item name="android:windowTranslucentStatus" >true</item>-->
+        <!--      <item name="android:windowTranslucentStatus" >true</item>-->
 
         <!--        spalshscreen-->
         <item name="android:windowSplashScreenBackground">@color/backgroundColor</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="android:windowSplashScreenAnimationDuration">3000</item>
-<!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/white</item>-->
-<!--        <item name="android:windowSplashScreenBrandingImage">@drawable/...</item>-->
+        <!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/white</item>-->
+        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/...</item>-->
         <item name="android:windowSplashScreenBehavior">icon_preferred</item>
 
     </style>
