@@ -5,7 +5,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import com.material3.rally.R
@@ -23,7 +22,6 @@ private val RobotoCondensedFontFamily = FontFamily(
 )
 
 
-
 val Typography = Typography(
     headlineLarge = TextStyle(
         fontWeight = FontWeight.W100,
@@ -37,7 +35,7 @@ val Typography = Typography(
     ),
     headlineSmall = TextStyle(
         fontWeight = FontWeight.W400,
-        fontSize = 14.sp
+        fontSize = 24.sp
     ),
      titleLarge =  TextStyle(
         fontWeight = FontWeight.Light,
@@ -45,12 +43,14 @@ val Typography = Typography(
         lineHeight = 20.sp,
         letterSpacing = 3.sp
     ),
+
     titleMedium = TextStyle(
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
         letterSpacing = 0.1.em
     ),
     bodyLarge = TextStyle(
+        fontFamily = RobotoCondensedFontFamily,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         letterSpacing = 0.1.em
@@ -61,18 +61,26 @@ val Typography = Typography(
         lineHeight = 20.sp,
         letterSpacing = 0.1.em
     ),
+    bodySmall = TextStyle(
+        fontWeight = FontWeight.Normal,
+        fontSize = 20.sp,
+        lineHeight = 28.sp,
+        letterSpacing = 1.sp
+    ),
     labelLarge = TextStyle(
-        fontWeight = FontWeight.Bold,
-        fontSize = 14.sp,
-        lineHeight = 16.sp,
-        letterSpacing = 0.2.em
+        fontWeight = FontWeight.Normal,
+        fontSize = 18.sp,
+        lineHeight = 20.sp,
+        fontFamily = EczarFontFamily,
+        letterSpacing = 3.sp
     ),
     labelMedium = TextStyle(
         fontWeight = FontWeight.W500,
-        fontSize = 12.sp
+        fontSize = 14.sp
     ),
     labelSmall = TextStyle(
         fontWeight = FontWeight.W500,
         fontSize = 10.sp
     )
 )
+

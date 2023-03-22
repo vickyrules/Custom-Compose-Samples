@@ -1,30 +1,43 @@
 package com.material3.rally.ui.theme
 
 import android.app.Activity
+import android.graphics.Color.toArgb
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material.ripple.LocalRippleTheme
+import androidx.compose.material.ripple.RippleAlpha
+import androidx.compose.material.ripple.RippleTheme
+import androidx.compose.material.ripple.rememberRipple
 import androidx.compose.material3.*
+import androidx.compose.material3.Shapes
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.compositeOver
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
+
 import androidx.core.view.ViewCompat
+import com.material3.rally.data.rallyTabRowScreens
+
 
 private val DarkColorScheme = darkColorScheme(
-    primary = RallyStatusBar,
-    secondary = RallyDarkGreen,
-    tertiary = Pink80,
+    primary = RallyGreen,
+    surface = RallyBackground,
+    onSurface = Color.White,
     background = RallyBackground,
-
+    onBackground = Color.White,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = RallyStatusBar,
-    secondary = RallyDarkGreen,
-    tertiary = Pink40,
+    //primary = RallyStatusBar,
+    primary = RallyGreen,
+    surface = RallyBackground,
+    onSurface = Color.White,
     background = RallyBackground,
-
+    onBackground = Color.White
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
     surface = Color(0xFFFFFBFE),
@@ -54,15 +67,37 @@ fun RallyTheme(
     val view = LocalView.current
     if (!view.isInEditMode) {
         SideEffect {
-            (view.context as Activity).window.statusBarColor = colorScheme.primary.toArgb()
-            ViewCompat.getWindowInsetsController(view)?.isAppearanceLightStatusBars = darkTheme
+            (view.context as Activity).window.statusBarColor = colorScheme.background.toArgb()
+            ViewCompat.getWindowInsetsController(view)?.isAppearanceLightStatusBars = false
+
         }
     }
 
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
-        content = content,
-        shapes = Shapes
+        shapes = Shapes,
+
+    )
+    {
+        CompositionLocalProvider(
+            LocalRippleTheme provides RallyRippleTheme,
+            content = content
+        )
+    }
+
+}
+private object RallyRippleTheme : RippleTheme {
+    // Here you should return the ripple color you want
+    // and not use the defaultRippleColor extension on RippleTheme.
+    // Using that will override the ripple color set in DarkMode
+    // or when you set light parameter to false
+    @Composable
+    override fun defaultColor(): Color = MaterialTheme.colorScheme.primary
+
+    @Composable
+    override fun rippleAlpha(): RippleAlpha = RippleTheme.defaultRippleAlpha(
+        Color.White,
+        lightTheme = !isSystemInDarkTheme()
     )
 }

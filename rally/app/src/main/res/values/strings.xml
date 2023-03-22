@@ -6,5 +6,11 @@
     <string name="accounts">Accounts</string>
     <string name="bills">Bills</string>
     <string name="sort">Sort</string>
+    <string name="overview">overview</string>
     <string name="see_all">SEE ALL</string>
+    <string name="AccontScreen">Accounts Screen</string>
+    <string name="AlertBodyTxt">Heads up, you\'ve used up 90% of your Shopping budget for this month.</string>
+    <string name="Dismiss">Dismiss</string>
+    <string name="SELL_ALL">SEE ALL</string>
+    <string name="AlertLabel">Alerts</string>
 </resources>

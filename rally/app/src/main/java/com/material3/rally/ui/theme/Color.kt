@@ -12,7 +12,8 @@ val Pink40 = Color(0xFF7D5260)
 
 //RallyColors
 val RallyGreen = Color(0xFF1EB980)
-val RallyDarkGreen = Color(0xFF045D56)
+val RallyDarkGreen = Color(0xFF05665F)
+val RallyDarkGreenLight = Color(0xFF04B97F)
 val RallyOrange = Color(0xFFFF6859)
 val RallyYellow = Color(0xFFFFCF44)
 val RallyPurple = Color(0xFFB15DFF)
