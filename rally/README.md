@@ -1,6 +1,6 @@
-## Rally:
+## Rally App
 
-catergory: [ *Low complexity* ]
+**catergory: [ *Low complexity* ]**
 
 |  ![RallyBanner](./RallyScreenshots/RallyBanner.png)   | <img width="150px" height="320px" alt="rallydemo" src =".\RallyScreenshots/RallyDemo.gif"/> |
 |-----|------------------------------------------------------------------------------|
@@ -22,3 +22,4 @@ reusability and animations
 
 [Navigation in Jetpack Compose Codelab](https://developer.android.com/codelabs/jetpack-compose-navigation)
 codelab.
+ |                                                                                       |
