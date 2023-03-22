@@ -1,32 +1,20 @@
 ## Rally:
 
 catergory: [ *Low complexity* ]
-![RallyBanner](./RallyScreenshots/RallyBanner.png)
-![]()
 
-<div >
-<div width="60%">
+|  ![RallyBanner](./RallyScreenshots/RallyBanner.png)   | <img width="800px" alt="rallydemo" src =".\RallyScreenshots/RallyDemo.gif"/> |
+|-----|------------------------------------------------------------------------------|
+
 
 A Compose implementation of the Rally Material study, a financial app that focuses on data, charts,
 reusability and animations
-
-* Material theming with a dark-only theme
-
 > What you will learn:
+> * Material theming with a dark-only theme
 > * Custom layouts and reusable elements
 > * Charts and tables
 > * Animations
 > * Navigation
 > * Screenshot tests
-
-</div>
-<div width = "40%" >
-
-![rallydemo](./RallyScreenshots/RallyDemo.gif)
-
-</div>
-
-</div>
 
 
 
