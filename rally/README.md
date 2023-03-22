@@ -22,4 +22,4 @@ reusability and animations
 
 [Navigation in Jetpack Compose Codelab](https://developer.android.com/codelabs/jetpack-compose-navigation)
 codelab.
- |                                                                                       |
+
