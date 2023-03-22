@@ -2,7 +2,7 @@
 
 catergory: [ *Low complexity* ]
 
-|  ![RallyBanner](./RallyScreenshots/RallyBanner.png)   | <img width="800px" alt="rallydemo" src =".\RallyScreenshots/RallyDemo.gif"/> |
+|  ![RallyBanner](./RallyScreenshots/RallyBanner.png)   | <img width="150px" height="320px" alt="rallydemo" src =".\RallyScreenshots/RallyDemo.gif"/> |
 |-----|------------------------------------------------------------------------------|
 
 
