@@ -10,6 +10,7 @@ A Compose implementation of the Rally Material study, a financial app that focus
 reusability and animations
 > What you will learn:
 > * Material theming with a dark-only theme
+> * Splashscreen API
 > * Custom layouts and reusable elements
 > * Charts and tables
 > * Animations
@@ -21,5 +22,4 @@ reusability and animations
 
 
 [Navigation in Jetpack Compose Codelab](https://developer.android.com/codelabs/jetpack-compose-navigation)
-codelab.
 
