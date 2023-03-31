@@ -63,4 +63,10 @@
     <string name="strongly_dislike">Strongly\nDislike</string>
     <string name="strongly_like">Strongly\nLike</string>
     <string name="neutral">Neutral</string>
+
+    <string name="Welcome">Welcome</string>
+    <string name="SignUp">SignUp</string>
+    <string name="SignIn">SignIn</string>
+    <string name="Survey">Survey</string>
+    <string name="SurveyResults">SurveyResult</string>
 </resources>
