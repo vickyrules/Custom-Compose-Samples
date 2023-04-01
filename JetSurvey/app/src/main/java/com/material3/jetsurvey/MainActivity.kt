@@ -9,6 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.material3.jetsurvey.ui.navigation.JetSurveyNavHost
 import com.material3.jetsurvey.ui.theme.JetSurveyTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    JetSurveyApp()
+                    JetSurveyNavHost()
                 }
             }
         }
